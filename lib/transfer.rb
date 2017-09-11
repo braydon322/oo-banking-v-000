@@ -1,5 +1,5 @@
 class Transfer
-  def initialize
+  def initialize(one, two, three)
 
   end
 end
