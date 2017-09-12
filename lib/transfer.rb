@@ -10,12 +10,14 @@ class Transfer
   end
 
   def valid?
+    sender.balance
   end
 
   def reverse_transfer
   end
 
   def execute_transaction
+    
   end
 
 
