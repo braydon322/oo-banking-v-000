@@ -9,6 +9,6 @@ class Transfer
     @status = ""
   end
 
-  
+
 
 end
