@@ -15,6 +15,8 @@ class Transfer
   end
 
   def valid?
+    sender.valid?
+    receiver.valid?
     ((sender.balance > amount) && (sender.status == "open") && (@transfer == 0)) ? true : false
   end
 
