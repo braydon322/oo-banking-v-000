@@ -15,7 +15,7 @@ class Transfer
   end
 
   def valid?
-    (sender.balance > amount) && (sender.status == "open") && (@transfer == 0) ? true : false
+    ((sender.balance > amount) && (sender.status == "open") && (@transfer == 0)) ? true : false
   end
 
   def reverse_transfer
