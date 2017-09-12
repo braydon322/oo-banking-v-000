@@ -12,7 +12,7 @@ class Transfer
   end
 
   def valid?
-    sender.balance > amount
+    (sender.balance > amount) && (sender.status == "open") ? true : false
     binding.pry
 
   end
