@@ -10,7 +10,9 @@ class Transfer
   end
 
   def valid?
-  
+  end
+
+  def reverse_transfer
   end
 
 
