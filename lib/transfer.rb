@@ -11,7 +11,7 @@ class Transfer
 
   def valid?
     (sender.balance > amount && sender.status == "open") ? true : false
-    
+
   end
 
   def reverse_transfer
