@@ -13,8 +13,6 @@ class Transfer
 
   def valid?
     (sender.balance > amount) && (sender.status == "open") ? true : false
-    binding.pry
-
   end
 
   def reverse_transfer
