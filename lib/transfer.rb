@@ -13,14 +13,14 @@ class Transfer
   end
 
   def valid?
-    (sender.balance > amount) && (sender.status == "open") ? true : false
+    (sender.balance > amount) && (sender.status == "open") && (@transfer == 0) ? true : false
   end
 
   def reverse_transfer
   end
 
   def execute_transaction
-    if valid? && @transfer == 0
+    if valid?
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
       @status = "complete"
